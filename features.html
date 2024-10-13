@@ -7,121 +7,120 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://i.postimg.cc/nLCM9xF9/testt.png" alt="Payload Icon" class="icon"> <!-- Replace with your icon URL -->
-            <div class="logo">
-                <h1></h1>
+<header>
+    <div class="header-content">
+        <img src="https://i.postimg.cc/nLCM9xF9/testt.png" alt="Payload Icon" class="icon">
+        <div class="logo">
+            <h1></h1>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateTo('index.html'); return false;">Home</a></li>
+            <li><a href="#" onclick="navigateTo('features.html'); return false;">Features</a></li>
+            <li><a href="#" onclick="navigateTo('faq.html'); return false;">FAQ</a></li>
+            <li><a href="#" onclick="navigateTo('purchase.html'); return false;">Purchase</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-rectangles">
+            <div class="feature-rectangle">
+                <h3>Render</h3>
+                <p>Render+<span class="description"> - Allows the user to control particles, animations, postfx, overlays, and hud elements.</span></p>
+                <p>StorageESP<span class="description"> - Highlights storages through walls.</span></p>
+                <p>EntityESP<span class="description"> - Highlights entities through walls.</span></p>
+                <p>PlayerESP<span class="description"> - Highlights players through walls.</span></p>
+                <p>ItemESP<span class="description"> - Highlights item entities on the ground.</span></p>
+                <p>DungeonESP<span class="description"> - Highlights monster spawners underground. Useful for vanilla servers.</span></p>
+                <p>Fullbright<span class="description"> - Brightens your game.</span></p>
+                <p>Breadcrumbs<span class="description"> - Leaves a trail so you don't get lost.</span></p>
+                <p>Tracers<span class="description"> - Draws a line towards entities.</span></p>
+                <p>Trajectories<span class="description"> - Visualize the trajectory of a projectile.</span></p>
+                <p>XRay<span class="description"> - You're superman!</span></p>
+                <p>CamZoom<span class="description"> - Optifine Zoom.</span></p>
+            </div>
+
+            <div class="feature-rectangle">
+                <h3>HUD</h3>
+                <p>DVDLogo<span class="description"> - Renders a bouncing DVDLogo! Will it hit the corner?</span></p>
+                <p>Watermark<span class="description"> - Adds a unique watermark.</span></p>
+                <p>PositionHud<span class="description"> - Shows the player's coordinate position on the HUD.</span></p>
+                <p>ArmorHud<span class="description"> - Displays the player's armor status.</span></p>
+                <p>IRLTime<span class="description"> - Shows real-world time in the game.</span></p>
+                <p>DayCounter<span class="description"> - Returns a current day count of the connected world.</span></p>
+                <p>ArrayList<span class="description"> - Displays a list of active modules.</span></p>
+                <p>Speedometer<span class="description"> - Visualizes your speed in KM/H.</span></p>
+            </div>
+
+            <div class="feature-rectangle">
+                <h3>Combat</h3>
+                <p>CrystalAura<span class="description"> - Automatically attacks nearby enemies with crystals.</span></p>
+                <p>KillAura<span class="description"> - Automatically attacks enemies within range.</span></p>
+                <p>Velocity<span class="description"> - Control your knockback.</span></p>
+                <p>BowAimbot<span class="description"> - Automatically aims your bow for you.</span></p>
+                <p>Criticals<span class="description"> - Increases chances of critical hits using packets.</span></p>
+                <p>AutoArmor<span class="description"> - Automatically equips armor when available.</span></p>
+                <p>Mace+<span class="description"> - Deal max mace damage every single swing.</span></p>
+                <p>Reach<span class="description"> - Extends the reach of attacks and actions.</span></p>
+                <p>AutoTotem<span class="description"> - Automatically uses totems in critical situations.</span></p>
+                <p>Offhand<span class="description"> - Allows use of items in the offhand for combat.</span></p>
+                <p>Minihop<span class="description"> - Exploit that both reduces knockback and increases critical chance.</span></p>
+                <p>Surround<span class="description"> - Automatically surrounds players with blocks.</span></p>
+            </div>
+
+            <div class="feature-rectangle">
+                <h3>Player</h3>
+                <p>AutoSign<span class="description"> - Automatically write text on signs.</span></p>
+                <p>PacketMine<span class="description"> - Increase your mining speed.</span></p>
+                <p>FastPlace<span class="description"> - Increase your placement speed.</span></p>
+                <p>FastUse<span class="description"> - Increase your use speed.</span></p>
+                <p>AutoEat<span class="description"> - Automatically eat.</span></p>
+                <p>AutoWalk<span class="description"> - Walks for you.</span></p>
+                <p>AutoShear<span class="description"> - Shear all sheep near you.</span></p>
+                <p>AutoFish<span class="description"> - Go fishing!</span></p>
+            </div>
+
+            <div class="feature-rectangle">
+                <h3>Movement</h3>
+                <p>Entity+<span class="description"> - Fly in any entity using velocity modifiers.</span></p>
+                <p>Boatfly<span class="description"> - Traditional boatfly.</span></p>
+                <p>Elytra+<span class="description"> - Move extremely fast with your elytra.</span></p>
+                <p>ClickTP<span class="description"> - Teleport!</span></p>
+                <p>Ladder+<span class="description"> - Alters your interactions with ladders.</span></p>
+                <p>Flight<span class="description"> - It's a bird! It's a plane!</span></p>
+                <p>InventoryMove<span class="description"> - Move while in inventories.</span></p>
+                <p>HighJump<span class="description"> - Jump super high!</span></p>
+                <p>RocketBoots<span class="description"> - Shoot off into space!</span></p>
+                <p>No-Fall<span class="description"> - It's in the name. NO. FALL.</span></p>
+                <p>FastHop<span class="description"> - Jump super fast.</span></p>
+                <p>NoSlowDown<span class="description"> - Stay at full speed whilst eating, in webs, soulsand, etc.</span></p>
+                <p>Sneak<span class="description"> - Makes you crouch.</span></p>
+                <p>WallClimb<span class="description"> - You are a parkour legend!</span></p>
+            </div>
+
+            <div class="feature-rectangle">
+                <h3>Misc</h3>
+                <p>OptimizeFPS<span class="description"> - Various game optimizations.</span></p>
+                <p>MiddleMouseFriends<span class="description"> - Make some friends!</span></p>
+                <p>Timer<span class="description"> - Adjust your client tickspeed.</span></p>
+                <p>Spotify+<span class="description"> - Sync your Spotify up to the game!</span></p>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="purchase.html">Purchase</a></li>
-            </ul>
-        </nav>
-    </header>
+    </section>
+</main>
 
-    <main>
-        <section id="features">
-            <h2>Features</h2>
-            <div class="feature-rectangles">
-                <div class="feature-rectangle">
-                    <h3>Render</h3>
-    <p>Render+<span class="description"> - Allows the user to control particles, animations, postfx, overlays, and hud elements.</span></p>
-    <p>StorageESP<span class="description"> - Highlights storages through walls.</span></p>
-    <p>EntityESP<span class="description"> - Highlights entities through walls.</span></p>
-    <p>PlayerESP<span class="description"> - Highlights players through walls.</span></p>
-    <p>ItemESP<span class="description"> - Highlights item entities on the ground.</span></p>
-    <p>DungeonESP<span class="description"> - Highlights monster spawners underground. Useful for vanilla servers.</span></p>
-    <p>Fullbright<span class="description"> - Brightens your game.</span></p>
-    <p>Breadcrumbs<span class="description"> - Leaves a trail so you don't get lost.</span></p>
-    <p>Tracers<span class="description"> - Draws a line towards entities. </span></p>
-    <p>Trajectories<span class="description"> - Visualize the trajectory of a projectile.</span></p>
-    <p>XRay<span class="description"> - You're superman!</span></p>
-    <p>CamZoom<span class="description"> - Optifine Zoom.</span></p>
+<footer>
+    <p>&copy; 2024 Payload Mod. All rights reserved.</p>
+</footer>
 
-                    
-                </div> <!-- Closing tag for Render rectangle -->
-                
-      <div class="feature-rectangle">
-    <h3>HUD</h3>
-    <p>DVDLogo<span class="description"> - Renders a bouncing DVDLogo! Will it hit the corner?</span></p>
-    <p>Watermark<span class="description"> - Adds a unique watermark.</span></p>
-    <p>PositionHud<span class="description"> - Shows the player's coordinate position on the HUD.</span></p>
-    <p>ArmorHud<span class="description"> - Displays the player's armor status.</span></p>
-    <p>IRLTime<span class="description"> - Shows real-world time in the game.</span></p>
-    <p>DayCounter<span class="description"> - Returns a current day count of the connected world.</span></p>
-    <p>ArrayList<span class="description"> - Displays a list of active modules.</span></p>
-    <p>Speedometer<span class="description"> - Visualizes your speed in KM/H.</span></p>
-</div>
-                
-   <div class="feature-rectangle">
-    <h3>Combat</h3>
-    <p>CrystalAura<span class="description"> - Automatically attacks nearby enemies with crystals.</span></p>
-    <p>KillAura<span class="description"> - Automatically attacks enemies within range.</span></p>
-    <p>Velocity<span class="description"> - Control your knockback.</span></p>
-    <p>BowAimbot<span class="description"> - Automatically aims your bow for you.</span></p>
-    <p>Criticals<span class="description"> - Increases chances of critical hits using packets.</span></p>
-    <p>AutoArmor<span class="description"> - Automatically equips armor when available.</span></p>
-    <p>Mace+<span class="description"> - Deal max mace damage every single swing.</span></p>
-    <p>Reach<span class="description"> - Extends the reach of attacks and actions.</span></p>
-    <p>AutoTotem<span class="description"> - Automatically uses totems in critical situations.</span></p>
-    <p>Offhand<span class="description"> - Allows use of items in the offhand for combat.</span></p>
-    <p>Minihop<span class="description"> - Exploit that both reduces knockback and increases critical chance.</span></p>
-    <p>Surround<span class="description"> - Automatically surrounds players with blocks, useful for .</span></p>
-</div>
-                
-                <div class="feature-rectangle">
-                    <h3>Player</h3>
-    <p>AutoSign<span class="description"> - Automatically write text on signs.</span></p>
-    <p>PacketMine<span class="description"> - Increase your mining spead.</span></p>
-    <p>FastPlace<span class="description"> - Increase your placement speed.</span></p>
-    <p>FastUse<span class="description"> - Increase your use speed.</span></p>
-    <p>AutoEat<span class="description"> - Automatically eat.</span></p>
-    <p>AutoWalk<span class="description"> - Walks for you.</span></p>
-    <p>AutoShear<span class="description"> - Shear all sheap near you..</span></p>
-    <p>AutoFish<span class="description"> - Go fishing!</span></p>
-    
-                </div>
-                
-                <div class="feature-rectangle">
-                    <h3>Movement</h3>
-<p>Entity+<span class="description"> - Fly in any entity using velocity modifiers.</span></p>
- <p>Boatfly<span class="description"> - Traditional boatfly.</span></p>
-    <p>Elytra+<span class="description"> - Move extremely fast with your elytra.</span></p>
-    <p>ClickTP<span class="description"> - Teleport!</span></p>
-    <p>Ladder+<span class="description"> - Alters your interactions with ladders</span></p>
-    <p>Flight<span class="description"> - It's a bird! It's a plane!</span></p>
-    <p>InventoryMove<span class="description"> - Move while in inventories.</span></p>
-    <p>HighJump<span class="description"> - Jump super high!</span></p>
-    <p>RocketBoots<span class="description"> - Shoot off into space!</span></p>
-    <p>No-Fall<span class="description"> - It's in the name. NO. FALL.</span></p>
-        <p>FastHop<span class="description"> - Jump super fucking fast.</span></p>
-            <p>NoSlowDown<span class="description"> - Stay at full speed whilst eating, in webs, soulsand, etc.</span></p>
-                <p>Sneak<span class="description"> - Makes you crouch.</span></p>
-               <p>WallClimb<span class="description"> - You are a parkour legend!</span></p>
-
-                
-                </div>
-                
-                <div class="feature-rectangle">
-                    <h3>Misc</h3>
-    <p>OptimizeFPS<span class="description"> - Various game optimizations.</span></p>
-    <p>MiddleMouseFriends<span class="description"> - Make some friends! </span></p>
-    <p>Timer<span class="description"> - Adjust your client tickspeed.</span></p>
-    <p>Spotify+<span class="description"> - Sync your spotify up to the game!</span></p>
-
-    
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Payload Mod. All rights reserved.</p>
-    </footer>
+<script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
 </body>
 </html>
