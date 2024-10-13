@@ -26,6 +26,23 @@ header {
     border-radius: 0px; /* Optional: Add rounded corners */
 }
 
+#purchase {
+    padding: 20px; /* Keep padding for space inside */
+    margin: 20px 0; /* Space outside */
+    min-height: 600px; /* Set a minimum height for the section (adjust as needed) */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border: 2px solid #000; /* Optional: Add a border */
+    border-radius: 0px; /* Optional: Add rounded corners */
+}
+
+#faq {
+    padding: 20px; /* Keep padding for space inside */
+    margin: 20px 0; /* Space outside */
+    min-height: 600px; /* Set a minimum height for the section (adjust as needed) */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border: 2px solid #000; /* Optional: Add a border */
+    border-radius: 0px; /* Optional: Add rounded corners */
+}
 .header-content {
     display: flex;
     align-items: center; /* Center icon and text vertically */
@@ -78,9 +95,12 @@ nav a:hover {
 .hero {
     padding: 10px 10px; /* Reduced padding for a smaller box */
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     margin: 20px;
+    border: 2px solid #000; /* Optional: Add a border */
+    border-radius: 0px; /* Optional: Match features section */
 }
+
 
 main {
     padding: 20px;
