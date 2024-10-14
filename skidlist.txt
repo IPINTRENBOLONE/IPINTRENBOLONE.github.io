@@ -1,0 +1,13 @@
+skid list:
+autoarmor
+autolog
+autototem
+offhand
+automine
+autotunnel?
+noglitchblocks
+nuker - PUT NUKER BACK bitch
+scaffold
+speedmine
+boatfly
+elytrafly
