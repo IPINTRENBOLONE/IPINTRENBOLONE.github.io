@@ -189,3 +189,54 @@ h3 {
 .feature-rectangle p:hover .description {
     display: block; /* Show the description on hover */
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.index {
+    display: flex;
+    padding: 20px;
+}
+
+#image-scroller {
+    float: left; /* Float the image scroller to the left */
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+    height: 50vh;
+    width: 50vw; /* Ensure it takes the full viewport width */
+    padding: 20px; /* Keep padding for space inside */
+    margin: 20px 0; /* Space outside */
+    min-height: 600px; /* Set a minimum height for the section (adjust as needed) */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border: 2px solid #000; /* Optional: Add a border */
+    border-radius: 0px; /* Optional: Add rounded corners */
+}
+
+#info-box {
+    height: 63vh; /* Same height as the image scroller */
+    width: 50vw; /* Same width as the image scroller */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border: 2px solid #000; /* Optional: Add a border */
+    border-radius: 0px; /* Optional: Add rounded corners */
+    margin-left: 20px; /* Space between scroller and info box */
+    display: flex; /* Ensures it takes the full width as a block element */
+    flex-direction: column; /* Stack image and text vertically */
+    justify-content: center; /* Center the content */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.info-image {
+    width: 100%; /* Make image fill the box */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Preserve aspect ratio without cropping */
+}
+
+.scroller {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+    width: 100%; /* Take full width */
+}
