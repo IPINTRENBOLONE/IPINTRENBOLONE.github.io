@@ -93,12 +93,12 @@ nav a:hover {
 }
 
 .hero {
-    padding: 10px 10px; /* Reduced padding for a smaller box */
-    text-align: center;
+    padding: 20px; /* Keep padding for space inside */
+    margin: 20px 0; /* Space outside */
+    min-height: 1200px; /* Set a minimum height for the section */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    margin: 20px;
     border: 2px solid #000; /* Optional: Add a border */
-    border-radius: 0px; /* Optional: Match features section */
+    border-radius: 0px; /* Optional: Add rounded corners */
 }
 
 

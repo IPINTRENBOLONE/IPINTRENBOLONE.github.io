@@ -3,39 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - Payload</title>
+    <title>FAQ - Payload</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Improved image rendering */
+        img {
+            width: 100%; /* Ensure images fill the container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Preserve aspect ratio without cropping */
+        }
+
+        /* Scroller container styles */
+        #image-scroller {
+            overflow: hidden; /* Hide overflow */
+            position: relative;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .scroller {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+            width: 100%; /* Take full width */
+        }
+
+        .scroller img {
+            flex: 0 0 100%; /* Each image takes full width of the scroller */
+            height: auto; /* Ensure height adjusts accordingly */
+        }
+
+        /* Button styles */
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10; /* Make sure buttons are on top */
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 1); /* Change on hover */
+        }
+    </style>
 </head>
 <body>
 <header>
     <div class="header-content">
-        <img src="https://i.postimg.cc/nLCM9xF9/testt.png" alt="Payload Icon" class="icon">
+        <img src="https://i.postimg.cc/nLCM9xF9/testt.png" alt="Payload Icon" class="icon"> <!-- Replace with your icon URL -->
         <div class="logo">
             <h1></h1>
         </div>
     </div>
     <nav>
         <ul>
-            <li><a href="#" onclick="navigateTo('index.html'); return false;">Home</a></li>
-            <li><a href="#" onclick="navigateTo('features.html'); return false;">Features</a></li>
-            <li><a href="#" onclick="navigateTo('faq.html'); return false;">FAQ</a></li>
-            <li><a href="#" onclick="navigateTo('purchase.html'); return false;">Purchase</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="purchase.html">Purchase</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <!-- Main content here -->
+    <section id="image-scroller">
+        <div class="scroller">
+            <img src="https://u.cubeupload.com/vsaw/c0eScreenshot2024101502.png" alt="Image 1">
+            <img src="https://u.cubeupload.com/vsaw/ac7Screenshot2024101502.png" alt="Image 2">
+            <img src="https://u.cubeupload.com/vsaw/Screenshot2024101502.png" alt="Image 3">
+        </div>
+
+        <button onclick="scrollImages(-1)" style="left: 10px;">❮</button>
+        <button onclick="scrollImages(1)" style="right: 10px;">❯</button>
+    </section>
 </main>
+
+<script>
+    let currentIndex = 0;
+
+    function scrollImages(direction) {
+        const images = document.querySelectorAll('.scroller img');
+        const totalImages = images.length;
+
+        currentIndex = (currentIndex + direction + totalImages) % totalImages;
+        const scroller = document.querySelector('.scroller');
+        const offset = -currentIndex * 100; // Adjust the offset for horizontal scrolling
+        scroller.style.transform = `translateX(${offset}%)`; // Use translateX for horizontal scrolling
+    }
+</script>
 
 <footer>
     <p>&copy; 2024 Payload Mod. All rights reserved.</p>
 </footer>
-
-<script>
-    function navigateTo(page) {
-        window.location.href = page;
-    }
-</script>
 </body>
 </html>
