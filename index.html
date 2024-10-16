@@ -3,87 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Payload</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Improved image rendering */
-        img {
-            width: 100%; /* Ensure images fill the container */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: contain; /* Preserve aspect ratio without cropping */
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Payload Technology</title>
+    <style>        button {
+        position: absolute;
+        margin-left: 400px;
+        margin-right: 400px;
+        top: 50%;
+        background: linear-gradient(90deg, rgba(182, 220, 255, 0.5), rgba(185, 182, 229, 0.5));
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10; /* Make sure buttons are on top */
+    }
 
-        /* Scroller container styles */
-        #image-scroller {
-            overflow: hidden; /* Hide overflow */
-            position: relative;
-            height: 25vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        .scroller {
-            display: flex;
-            transition: transform 0.5s ease;
-            height: 100%;
-            width: 100%; /* Take full width */
-        }
-
-        .scroller img {
-            flex: 0 0 100%; /* Each image takes full width of the scroller */
-            height: auto; /* Ensure height adjusts accordingly */
-        }
-
-        /* Button styles */
-        button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.8);
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10; /* Make sure buttons are on top */
-        }
-
-        button:hover {
-            background: rgba(255, 255, 255, 1); /* Change on hover */
-        }
-    </style>
+    button:hover {
+        background: linear-gradient(90deg, rgba(182, 220, 255, 0.5), rgba(185, 182, 229, 0.5));
+    }</style>
 </head>
 <body>
-<header>
-    <div class="header-content">
-        <img src="https://i.postimg.cc/nLCM9xF9/testt.png" alt="Payload Icon" class="icon"> <!-- Replace with your icon URL -->
-        <div class="logo">
-            <h1></h1>
-        </div>
+<div class="gradient-top-line"></div>
+<div class="container">
+    <h1>payload.technology</h1>
+    <div class="button-container">
+        <a href="features.html" class="btn">Features</a>
+        <a href="faq.html" class="btn">FAQ</a>
+        <a href="purchase.html" class="btn">Purchase</a>
+        <a href="https://discord.gg/n4ePaP4dcH" target="_blank" class="btn">Discord</a>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="purchase.html">Purchase</a></li>
-        </ul>
-    </nav>
-</header>
+</div>
+<div class="gradient-rectangle">
+    <p>An affordable, innovative, unforgettable 1.21.x utility mod.</p>
+</div>
+</body>
+</html>
 
-<main class="index">
+<div class="white-section">
+    <h2>Payload has over 75 utility modules ranging from unique HUD customization to anti-cheat bypasses. All for $5.00</h2>
+</div>
+
+<div class="divider"c></div> <!-- Divider -->
+
+<div class="new-section">
+    <button onclick="scrollImages(-1)" style="left: 10px;">❮</button>
+    <button onclick="scrollImages(1)" style="right: 10px;">❯</button>
     <section id="image-scroller">
         <div class="scroller">
             <img src="https://u.cubeupload.com/vsaw/c0eScreenshot2024101502.png" alt="Image 1">
             <img src="https://u.cubeupload.com/vsaw/ac7Screenshot2024101502.png" alt="Image 2">
             <img src="https://u.cubeupload.com/vsaw/Screenshot2024101502.png" alt="Image 3">
         </div>
-
-        <button onclick="scrollImages(-1)" style="left: 10px;">❮</button>
-        <button onclick="scrollImages(1)" style="right: 10px;">❯</button>
     </section>
-    <div id="info-box">
-    <img src="https://u.cubeupload.com/vsaw/Untitled4.png" alt="Description of Image" class="info-image">
-    </div>
-</main>
+</div>
 
 <script>
     let currentIndex = 0;
@@ -98,9 +70,3 @@
         scroller.style.transform = `translateX(${offset}%)`; // Use translateX for horizontal scrolling
     }
 </script>
-
-<footer>
-    <p>&copy; 2024 Payload Mod. All rights reserved.</p>
-</footer>
-</body>
-</html>
